@@ -22,40 +22,30 @@
 <tr>
 <td width="55%" valign="top">
 
-Soy **Ernesto Flores (Net)**, desarrollador **Odoo** y de **aplicaciones web** en Puebla, México.
+Desarrollador **Odoo** y de **aplicaciones web** en Puebla, México.
+Me gusta convertir procesos de negocio en sistemas que la gente sí usa.
 
-**🟣 Odoo**
-- 🏢 Desarrollo módulos a medida en **E-Tracker México** (rastreo GPS): helpdesk de tickets para dispositivos, portal de clientes e integración con la **API de Navixy**
-- 🔄 Migré un módulo completo de **Odoo 17 → 19** y administro el deploy en **Odoo.sh** (staging → producción, dominio propio)
-- 🛍️ Implementé y administro **Odoo 19** para un mayorista de ropa: inventario, ventas y punto de venta
-- 🧩 QWeb, vistas Kanban, plantillas de correo, controladores web y scripts de migración
-
-**🌐 Web apps**
-- ⚙️ APIs REST, bases de datos SQL e integraciones entre sistemas
-- 🎨 Frontend con JavaScript, HTML y CSS, de punta a punta
-- 💬 Platícame de: ERPs, Odoo, Python y procesos de negocio
+**Lo que hago**
+- 🧩 Módulos de Odoo a medida: modelos, vistas, QWeb, portales y reportes
+- 🔌 Integraciones con APIs externas y automatización de procesos
+- 🚀 Migraciones de versión y despliegues en Odoo.sh
+- 🏪 Implementaciones de Odoo para negocios: inventario, ventas y punto de venta
+- 🌐 Web apps: APIs REST, bases de datos SQL y frontend
 
 </td>
 <td width="45%" valign="top">
 
 ```python
-class Developer(models.Model):
-    _name = 'net.developer'
+class Net(models.Model):
+    _name = 'res.developer'
+    _description = 'Odoo & Web Developer'
 
-    name = fields.Char(default='Ernesto Flores')
-    city = fields.Char(default='Puebla, MX')
-    version = fields.Char(default='17.0 → 19.0')
-    stack = fields.Many2many(
-        default=['odoo', 'python', 'qweb',
-                 'postgresql', 'owl', 'js'])
-    integrations = fields.Many2many(
-        default=['navixy_api', 'rest'])
-    deploy = fields.Selection(
-        default='odoo.sh')
-    open_to_work = fields.Boolean(default=False)
-
-    def action_build(self):
-        return self.env['erp'].ship()
+    location = 'Puebla, MX'
+    focus = ['módulos a medida',
+             'integraciones API',
+             'web apps']
+    stack = ['python', 'odoo', 'postgresql',
+             'owl', 'qweb', 'js']
 ```
 
 </td>
@@ -75,10 +65,10 @@ class Developer(models.Model):
 
 ---
 
-### 📊 GitHub Stats
+### 📈 Actividad
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Netttttttt&hide_border=true&background=0d1117&ring=714B67&fire=C9A2C0&currStreakLabel=C9A2C0&sideLabels=e6edf3&currStreakNum=e6edf3&sideNums=e6edf3&dates=8b949e&locale=es&hide_current_streak=true&hide_longest_streak=true" />
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Netttttttt&theme=github_dark" />
 </p>
 
 ---
