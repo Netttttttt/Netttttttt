@@ -11,7 +11,6 @@
   <img src="https://img.shields.io/badge/Odoo-714B67?style=flat-square&logo=odoo&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=ffd343" />
   <img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=4169e1" />
-  <img src="https://komarev.com/ghpvc/?username=Netttttttt&style=flat-square&color=714B67&label=visitas" />
 </p>
 
 ---
@@ -67,10 +66,6 @@ class Developer(models.Model):
 
 ### 📊 GitHub Stats
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Netttttttt&show_icons=true&hide_border=true&bg_color=0d1117&title_color=C9A2C0&icon_color=714B67&text_color=e6edf3&locale=es" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Netttttttt&layout=compact&hide_border=true&bg_color=0d1117&title_color=C9A2C0&text_color=e6edf3&locale=es" />
-</p>
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=Netttttttt&hide_border=true&background=0d1117&ring=714B67&fire=C9A2C0&currStreakLabel=C9A2C0&sideLabels=e6edf3&currStreakNum=e6edf3&sideNums=e6edf3&dates=8b949e&locale=es" />
 </p>
