@@ -4,13 +4,14 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3000&pause=800&color=C9A2C0&center=true&vCenter=true&width=520&lines=Hola+%F0%9F%91%8B+soy+Net;Odoo+Developer+%7C+Python+%2B+PostgreSQL;Construyo+ERPs+que+la+gente+s%C3%AD+usa;Puebla%2C+M%C3%A9xico+%F0%9F%87%B2%F0%9F%87%BD" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3000&pause=800&color=C9A2C0&center=true&vCenter=true&width=520&lines=Hola+%F0%9F%91%8B+soy+Net;Odoo+Developer+%7C+Python+%2B+PostgreSQL;M%C3%B3dulos+a+medida+%2B+integraciones+API;Web+apps+de+punta+a+punta;Construyo+ERPs+que+la+gente+s%C3%AD+usa;Puebla%2C+M%C3%A9xico+%F0%9F%87%B2%F0%9F%87%BD" alt="Typing SVG" />
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Odoo-714B67?style=flat-square&logo=odoo&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=ffd343" />
   <img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=4169e1" />
+  <img src="https://img.shields.io/badge/Odoo.sh-0d1117?style=flat-square&logo=odoo&logoColor=C9A2C0" />
 </p>
 
 ---
@@ -21,12 +22,17 @@
 <tr>
 <td width="55%" valign="top">
 
-Soy **Ernesto Flores (Net)**, desarrollador **Odoo** en Puebla, México.
+Soy **Ernesto Flores (Net)**, desarrollador **Odoo** y de **aplicaciones web** en Puebla, México.
 
-- 🏢 Desarrollador Odoo freelance / por proyecto en **E-Tracker México**
+**🟣 Odoo**
+- 🏢 Desarrollo módulos a medida en **E-Tracker México** (rastreo GPS): helpdesk de tickets para dispositivos, portal de clientes e integración con la **API de Navixy**
+- 🔄 Migré un módulo completo de **Odoo 17 → 19** y administro el deploy en **Odoo.sh** (staging → producción, dominio propio)
 - 🛍️ Implementé y administro **Odoo 19** para un mayorista de ropa: inventario, ventas y punto de venta
-- 🌐 También construyo **aplicaciones web** de punta a punta
-- 🌱 Ahora mismo: módulos OWL, integraciones vía API y automatización de procesos
+- 🧩 QWeb, vistas Kanban, plantillas de correo, controladores web y scripts de migración
+
+**🌐 Web apps**
+- ⚙️ APIs REST, bases de datos SQL e integraciones entre sistemas
+- 🎨 Frontend con JavaScript, HTML y CSS, de punta a punta
 - 💬 Platícame de: ERPs, Odoo, Python y procesos de negocio
 
 </td>
@@ -38,10 +44,15 @@ class Developer(models.Model):
 
     name = fields.Char(default='Ernesto Flores')
     city = fields.Char(default='Puebla, MX')
+    version = fields.Char(default='17.0 → 19.0')
     stack = fields.Many2many(
-        default=['odoo', 'python',
+        default=['odoo', 'python', 'qweb',
                  'postgresql', 'owl', 'js'])
-    open_to_work = fields.Boolean(default=True)
+    integrations = fields.Many2many(
+        default=['navixy_api', 'rest'])
+    deploy = fields.Selection(
+        default='odoo.sh')
+    open_to_work = fields.Boolean(default=False)
 
     def action_build(self):
         return self.env['erp'].ship()
@@ -67,7 +78,7 @@ class Developer(models.Model):
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Netttttttt&hide_border=true&background=0d1117&ring=714B67&fire=C9A2C0&currStreakLabel=C9A2C0&sideLabels=e6edf3&currStreakNum=e6edf3&sideNums=e6edf3&dates=8b949e&locale=es" />
+  <img src="https://streak-stats.demolab.com?user=Netttttttt&hide_border=true&background=0d1117&ring=714B67&fire=C9A2C0&currStreakLabel=C9A2C0&sideLabels=e6edf3&currStreakNum=e6edf3&sideNums=e6edf3&dates=8b949e&locale=es&hide_current_streak=true&hide_longest_streak=true" />
 </p>
 
 ---
